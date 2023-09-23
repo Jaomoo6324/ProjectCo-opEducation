@@ -11,15 +11,16 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "Students")
-public class StudentModel {
+@Table(name = "Staffs")
+public class StaffModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    private String firstName;
-    private String lastName;
-    private String studentId;
-    private String phone;
-    private String email;
+    private String s_name;
+    private String s_lastname;
+    private String s_phone;
+    private String s_role;
+    private String s_username;
+    private String s_password;
 }

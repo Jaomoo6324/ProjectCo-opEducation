@@ -14,6 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 @Entity
 @Table(name="company")
 public class CompanyModel {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -21,4 +22,6 @@ public class CompanyModel {
     private String c_address;
     private String c_phone;
     private String c_email;
+    private String c_line;
+    private String c_facebook;
 }

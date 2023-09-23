@@ -1,5 +1,6 @@
 package com.example.coop.model;
 
+
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -11,15 +12,12 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "Students")
-public class StudentModel {
-
+@Table(name = "Users")
+public class UserModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    private String firstName;
-    private String lastName;
-    private String studentId;
-    private String phone;
     private String email;
+    private String password;
+    private String role;
 }
